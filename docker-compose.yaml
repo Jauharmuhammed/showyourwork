@@ -14,11 +14,12 @@ services:
 
   web:
     build: .
-    command: python manage.py runserver 0.0.0.0:8000
+    command: sh -c "cd /usr/src/app && python manage.py runserver 0.0.0.0:8000 & cd /usr/src/app/frontend && npm start & tail -f /dev/null"
     volumes:
       - .:/code
     ports:
       - "8000:8000"
+      - "3000:3000"
     depends_on:
       - db
     environment:
