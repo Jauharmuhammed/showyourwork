@@ -135,3 +135,29 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+frontend/node_modules
+frontend/.pnp
+frontend.pnp.js
+
+frontend# testing
+frontend/coverage
+
+frontend# production
+frontend/build
+
+frontend# misc
+frontend.DS_Store
+frontend.env
+frontend.env.local
+frontend.env.development.local
+frontend.env.test.local
+frontend.env.production.local
+
+frontendnpm-debug.log*
+frontendyarn-debug.log*
+frontendyarn-error.log*
