@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f77e34a8.css",
+    "main.js": "/static/js/main.60d3313f.js",
+    "static/media/Apercu Italic.otf": "/static/media/Apercu Italic.b47cb3b6597e04b3b401.otf",
+    "static/media/Apercu Medium.otf": "/static/media/Apercu Medium.aedaec26a758f9fbd8d4.otf",
+    "static/media/Apercu Regular.otf": "/static/media/Apercu Regular.83b693d3141cb9dd1538.otf",
+    "static/media/Apercu Bold.otf": "/static/media/Apercu Bold.49e3b9c981f064376dcf.otf",
+    "static/media/Apercu Light.otf": "/static/media/Apercu Light.3135dba7ca42dc6207cf.otf",
+    "static/media/Boogaloo-Regular.ttf": "/static/media/Boogaloo-Regular.fca21c9d1c17e5abca09.ttf",
+    "index.html": "/index.html",
+    "static/media/index.cjs": "/static/media/index.cd351d7c31d0d3fccf96.cjs",
+    "main.f77e34a8.css.map": "/static/css/main.f77e34a8.css.map",
+    "main.60d3313f.js.map": "/static/js/main.60d3313f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f77e34a8.css",
+    "static/js/main.60d3313f.js"
+  ]
+}
