@@ -109,6 +109,34 @@ python manage.py runserver
 <br>
 
 
+## Frontend setting up
+
+### Frontend Instructions (Create React App) 
+
+---> Navigate to the `frontend/` directory
+
+```Shell
+cd frontend
+```
+
+---> Install the project dependencies
+
+```Shell
+npm install
+```
+
+---> Start the development server on localhost:3000
+
+```Shell
+npm run start
+```
+
+---> Open your browser and navigate to either `http://localhost:3000 or http://127.0.0.1:3000`
+<br>
+<br>
+<br>
+
+
 
 ## Contact
 

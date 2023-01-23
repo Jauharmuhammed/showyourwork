@@ -61,6 +61,9 @@ const CreatePost = () => {
             })
             .catch((error) => {
                 console.log(error);
+                if (error.message === 'Network Error'){
+                    errorToast('File too large!')
+                }
                 setIsLoading(false);
             });
     }
