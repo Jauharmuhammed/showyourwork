@@ -30,7 +30,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['showyourworkapi.jauharmuhammed.com', '20.168.24.45', '127.0.0.1', 'localhost']
+# ALLOWED_HOSTS = ['showyourworkapi.jauharmuhammed.com', '20.168.24.45', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -236,14 +237,14 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 AUTH_USER_MODEL = 'accounts.CustomUser'
 
 # Configure the cors middleware’s behaviour in your Django settings. 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "https://showyourwork.jauharmuhammed.com",
-    "wss://showyourwork.jauharmuhammed.com",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+#     "http://localhost:8000",
+#     "http://127.0.0.1:8000",
+#     "https://showyourwork.jauharmuhammed.com",
+#     "wss://showyourwork.jauharmuhammed.com",
+# ]
 
 CORS_ALLOW_ALL_ORIGINS = True
 

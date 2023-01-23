@@ -13,47 +13,53 @@ def create_comment(sender, instance, created, **kwargs):
     if created:
 
         if instance.parent:
-            if instance.user == instance.parent.user: return
+            try:
+                if instance.user == instance.parent.user: return
 
-            # create a new reply notification
-            notification = Notification.objects.create(
-                to_user = instance.parent.user,
-                created_by = instance.user,
-                content = f'Replied to your comment: {instance.body}',
-                notification_type = 'reply',
-                post = instance.post,
-            )
+                # create a new reply notification
+                notification = Notification.objects.create(
+                    to_user = instance.parent.user,
+                    created_by = instance.user,
+                    content = f'Replied to your comment: {instance.body}',
+                    notification_type = 'reply',
+                    post = instance.post,
+                )
 
-            # send notification to the user
-            channel_layer = get_channel_layer()
-            async_to_sync(channel_layer.group_send)(
-                f'{instance.parent.user.username}__notifications',
-                {
-                    'type': 'new_notification',
-                    'message': NotificationSerializer(notification).data
-                }
-            )
-            print(instance.parent.user.username)
+                # send notification to the user
+                channel_layer = get_channel_layer()
+                async_to_sync(channel_layer.group_send)(
+                    f'{instance.parent.user.username}__notifications',
+                    {
+                        'type': 'new_notification',
+                        'message': NotificationSerializer(notification).data
+                    }
+                )
+                print(instance.parent.user.username)
+            except:
+                print('error')
         else:
-            if instance.user == instance.post.user: return
+            try:
+                if instance.user == instance.post.user: return
 
-            # create a new comment notification
-            notification = Notification.objects.create(
-                to_user = instance.post.user,
-                created_by = instance.user,
-                content = f'Commented on your post: {instance.body}',
-                notification_type = 'comment',
-                post = instance.post,
-            )
+                # create a new comment notification
+                notification = Notification.objects.create(
+                    to_user = instance.post.user,
+                    created_by = instance.user,
+                    content = f'Commented on your post: {instance.body}',
+                    notification_type = 'comment',
+                    post = instance.post,
+                )
 
-            # send notification to the user
-            channel_layer = get_channel_layer()
-            async_to_sync(channel_layer.group_send)(
-                f'{instance.post.user.username}__notifications',
-                {
-                    'type': 'new_notification',
-                    'message': NotificationSerializer(notification).data
-                }
-            )
+                # send notification to the user
+                channel_layer = get_channel_layer()
+                async_to_sync(channel_layer.group_send)(
+                    f'{instance.post.user.username}__notifications',
+                    {
+                        'type': 'new_notification',
+                        'message': NotificationSerializer(notification).data
+                    }
+                )
+            except:
+                pass
 
         
