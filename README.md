@@ -37,10 +37,17 @@
 
 
 ## About The Project
-This is the backend api using Django Rest Framework for Pinterest like social network platform. You can find the frontend of the project [here](https://github.com/Jauharmuhammed/social-network-react-client)
+<br>
+<p align='center'>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Feed.png" width='70%' >
+</p>
+<br>
+Show Your Work is an ongoing social network project like Pinterest. it is a single page web application using Django REST framework and React Js.
 
-- User Authentication using JWT (JSON Web Token).
-- Google and Mobile authentication
+- fully functional social network like Pinterest
+- Used JWT and Google Oauth2 for easy and secure authentication
+- Realtime chat functionality using WebSocket and Django Channels
+- Twilio API for OTP authentications Google Maps places autocomplete API.
 <br>
 
 
@@ -136,7 +143,86 @@ npm run start
 <br>
 <br>
 
+## Screenshots
 
+
+
+<table width="100%"> 
+<tr>
+
+<td width="50%">
+<p align="center">
+Landing Page
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Landing%20Page.png">  
+</td>
+  <td width="50%">      
+<p align="center">
+  Login Page
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Login%20Page.png">
+</td> 
+</table>
+<br/>
+
+<table width="100%"> 
+<tr>
+<td width="50%">      
+
+<p align="center">
+Profile
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Profile.png">  
+</td>
+<td width="50%">
+<p align="center">
+Post Page
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Post.png">  
+</td>
+</table>
+<br/>
+
+<table width="100%"> 
+<tr>
+<td width="50%">
+<p align="center">
+  Saved Posts
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Saved%20Posts.png">
+</td> 
+<td width="50%">
+<p align="center">
+Collection
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Collection.png">  
+</td>
+</table>
+<br/>
+
+
+<table width="100%"> 
+<tr>
+<td width="33%">
+<p align="center">
+  Messages
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Messages.png">
+</td> 
+<td width="33%">
+<p align="center">
+Private Chat
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Private%20Chat.png">  
+</td>
+<td width="33%">
+<p align="center">
+Notifications
+</p>
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Notification.png">  
+</td>
+</table>
+<br/>
 
 ## Contact
 
@@ -160,6 +246,3 @@ npm run start
 </a>
 
 </div>
-
-
-# showyourwork
