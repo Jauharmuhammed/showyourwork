@@ -252,7 +252,7 @@ AUTH_USER_MODEL = 'accounts.CustomUser'
 
 CORS_ALLOW_ALL_ORIGINS = True
 
-CSRF_TRUSTED_ORIGINS = ['https://showyourworkapi.jauharmuhammed.com']
+CSRF_TRUSTED_ORIGINS = ['https://showyourwork.api.jauharmuhammed.com']
 
 
 
