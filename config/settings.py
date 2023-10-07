@@ -159,7 +159,6 @@ DATABASES = {
         'PASSWORD': os.environ.get('DATABASES_PASSWORD'),
         'HOST': os.environ.get('DATABASES_HOST'),
         'PORT': os.environ.get('DATABASES_PORT'),
-        'OPTIONS': {'sslmode': 'require'}
     }
 }
 
