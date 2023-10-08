@@ -39,7 +39,7 @@
 ## About The Project
 <br>
 <p align='center'>
-<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/Feed.png" width='70%' >
+<img src="https://github.com/Jauharmuhammed/showyourwork/blob/main/assets/banner.png" width='70%' >
 </p>
 <br>
 Show Your Work is an ongoing social network project like Pinterest. it is a single page web application using Django REST framework and React Js.
